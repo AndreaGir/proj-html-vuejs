@@ -24,7 +24,20 @@
         </div>
         <!-- scritte centrali -->
         <div class="centrohead">
-
+            <div class="titolo-centro">
+              <h1>Key to your succes</h1>
+            </div>
+            <div class="p-centro">
+              <p>EduPrime is the most versatile WordPress Theme for education purposes, showcasing universities, courses, secondary schools etc.</p>
+            </div>
+            <div class="bottoni-centro">
+              <button class="bottone">
+                <span class="span"><i class="fa-solid fa-magnifying-glass"></i>Search courses</span> 
+              </button>
+              <button class="bottone2">
+                <span  class="span"><i class="fa-solid fa-user-plus"></i>Apply for university</span> 
+              </button>
+            </div>
           
         </div>
         <!-- bg sotto header -->
@@ -102,7 +115,7 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: white;
+  color: #FFFFFF;
   
 }
 .span {
@@ -117,16 +130,43 @@ export default {
     span{
       font-size: 12px;
       
-      color: white;
+      color: #FFFFFF;
+    }
+}
+.bottone2{
+  padding: 12px 22px 12px 22px;
+  border-radius: 20px;
+  border-style: none;
+  background-color: #FFFFFF;
+  
+    span{
+      font-size: 12px;
+      
+      color: #E56768;
     }
 }
 
 /* centro head */
 .centrohead{
-  width: 40%;
-  height: 60%;
+  width: 39%;
+  height: 40%;
   border: 1px solid black;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.titolo-centro > h1{
+  color: #FFFFFF;
+}
+.p-centro > p{
+  text-align: center;
+  color: #FFFFFF;
+}
+.bottoni-centro{
+  display: flex;
+  gap: 25px;
 }
 
 </style>
