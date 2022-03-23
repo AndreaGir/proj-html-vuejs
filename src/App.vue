@@ -2,12 +2,14 @@
   <div id="app">
     <MyHeader />
     <MainUno />
+    <MainDue />
   </div>
 </template>
 
 <script>
 import MyHeader from './components/MyHeader.vue'
 import MainUno from './components/MainUno.vue'
+import MainDue from './components/MainDue.vue'
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
 
@@ -15,7 +17,8 @@ export default {
   name: 'App',
   components: {
     MyHeader,
-    MainUno
+    MainUno,
+    MainDue
   }
 }
 </script>
