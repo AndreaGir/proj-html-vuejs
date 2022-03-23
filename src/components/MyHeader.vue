@@ -31,7 +31,7 @@
               <p>EduPrime is the most versatile WordPress Theme for education purposes, showcasing universities, courses, secondary schools etc.</p>
             </div>
             <div class="bottoni-centro">
-              <button class="bottone">
+              <button class="bottone-search">
                 <span class="span"><i class="fa-solid fa-magnifying-glass"></i>Search courses</span> 
               </button>
               <button class="bottone2">
@@ -42,13 +42,23 @@
         </div>
         <!-- bg sotto header -->
         <div class="bg-sotto">
+          <p>Purchase Eduprime on envato Market</p>
+          <div class="triangle-down">
 
         </div>
+        </div>
 
-      
+        <div class="puls-laterale">
+          <i class="fa-solid fa-cart-arrow-down"></i>
+          <i class="fa-solid fa-book-open"></i>
+          <i class="fa-regular fa-circle"></i>
+        </div>
+
+        
+
 
     </div>
-
+    
   </div>
   
 </template>
@@ -71,17 +81,18 @@ export default {
 }
 .header{
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background-color: #E56768;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  
   position: relative;
 }
 .bg-header{
   width: 100%;
   height: 100%;
-  background-color: #E56768;
+  background-color:rgba(228, 6, 6, 0.767);
   background-image: url('/src/assets/img/theme_slider2_bg-1.jpg');
   opacity: 0.2;
   background-repeat: no-repeat;
@@ -103,6 +114,7 @@ export default {
   display: flex;
   align-items: center;
   
+  
     img{
       width: 100%;
       opacity: none;
@@ -116,6 +128,7 @@ export default {
   justify-content: space-around;
   align-items: center;
   color: #FFFFFF;
+  
   
 }
 .span {
@@ -133,11 +146,15 @@ export default {
       color: #FFFFFF;
     }
 }
+/* centro head */
 .bottone2{
   padding: 12px 22px 12px 22px;
   border-radius: 20px;
   border-style: none;
-  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255 , 1.0 );
+  
+  right: 80px;
+  
   
     span{
       font-size: 12px;
@@ -145,17 +162,30 @@ export default {
       color: #E56768;
     }
 }
+.bottone-search{
+  padding: 12px 22px 12px 22px;
+  border-radius: 20px;
+  border-style: none;
+  background-color: #E9D758;
+  
+  left: 100px;
+    span{
+      font-size: 12px;
+      
+      color: #FFFFFF;
+    }
+}
 
-/* centro head */
 .centrohead{
   width: 39%;
   height: 40%;
-  border: 1px solid black;
+
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  position: relative;
 }
 .titolo-centro > h1{
   color: #FFFFFF;
@@ -167,6 +197,49 @@ export default {
 .bottoni-centro{
   display: flex;
   gap: 25px;
+}
+.bg-sotto{
+  width: 100%;
+  height: 17vh;
+  background-image: url('/src/assets/img/Wave-1.png');
+  /* background-color: #E56768; */
+  opacity: 1;
+  bottom: -80px;
+    p{
+      width: 200px;
+      border: 1px solid black;
+      text-align: center;
+      background-color: #000000;
+      color: #FFFFFF;
+      font-size: 12px;
+      position: absolute;
+      bottom: 10px;
+      left: 40px;
+      border-radius: 5px;
+    }
+}
+.puls-laterale{
+  position: absolute;
+  width: 30px;
+  height: 70px;
+  background-color: #E9D758;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: 50%;
+  border-radius: 3px;
+  gap: 4px;
+}
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #000000;
+  position: absolute;
+  bottom: 0;
+  left: 138px;
 }
 
 </style>
