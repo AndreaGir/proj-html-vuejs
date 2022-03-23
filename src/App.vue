@@ -1,18 +1,21 @@
 <template>
   <div id="app">
     <MyHeader />
+    <MainUno />
   </div>
 </template>
 
 <script>
 import MyHeader from './components/MyHeader.vue'
+import MainUno from './components/MainUno.vue'
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
 
 export default {
   name: 'App',
   components: {
-    MyHeader
+    MyHeader,
+    MainUno
   }
 }
 </script>
