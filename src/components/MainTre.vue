@@ -34,16 +34,42 @@
 
             </div>
             <div class="upco">
-                <div class="event-lg">
-                    <div></div>
+
+                <div class="event">
+                    <div class="eve-lg"></div>
                     <h1>Upcoming Events</h1>
                 </div>
-                <div>
 
+                <div class="calendario-eventi">
+                    <div class="cal-1">
+                        <h3>Coaching Session</h3>
+                        <p><i id="icon" class="fa-regular fa-calendar-days"></i>24 Mar 18:00 PM</p>
+                        <p>Lorem ipsum dolor sit amet sed. Exercitationem quos praesentium[...]</p>
+                        <div class="plus">
+                            <h5>+ Find More</h5>
+                        </div>
+                    </div>
+                     <div class="cal-1">
+                        <h3>Coaching Session</h3>
+                        <p><i id="icon" class="fa-regular fa-calendar-days"></i>30 Mar 20:00 PM</p>
+                        <p>Lorem ipsum dolor sit amet sed. Exercitationem quos praesentium[...]</p>
+                        <div class="plus">
+                            <h5>+ Find More</h5>
+                        </div>
+                    </div>
+                     <div class="cal-1">
+                        <h3>Coaching Session</h3>
+                        <p><i id="icon" class="fa-regular fa-calendar-days"></i>1 Apr 15:00 PM</p>
+                        <p>Lorem ipsum dolor sit amet sed. Exercitationem quos praesentium[...]</p>
+                        <div class="plus">
+                            <h5>+ Find More</h5>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div>
+                
 
-                </div>
+                <button class="bottone"> <span>View All Events</span> </button>
             </div>
         </div>
         <div class="bg-down">
@@ -187,7 +213,78 @@ export default {
     width: 62%;
     height: 50%;
     margin: 0 auto;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 } 
+.event{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+        h1{
+            font-size: 32px;
+            color: #ffffff;
+        }
+}
+.eve-lg{
+    width: 20%;
+    height: 50px;
+    background-image: url('/src/assets/img/upcoming-events-calendar-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+   
+}
+.calendario-eventi{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cal-1{
+    width: 32%;
+    height: 130px;
+    text-align: center;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    border-radius: 8px;
+    position: relative;
+
+        p{
+            font-size: 14px;
+            color: #8b8b8a;
+        }
+        
+}
+#icon{
+    padding-right: 4px;
+}
+.plus{
+    position: absolute;
+    bottom: -16px;
+        h5{
+            background-color: #eb0000e6;
+            padding: 8px;
+            border-radius: 15px;
+            color: #ffffff;
+        }
+}
+.bottone{
+  padding: 12px 22px 12px 22px;
+  border-radius: 20px;
+  border-style: none;
+  background-color: #E9D758;
+  
+  left: 100px;
+    span{
+      font-size: 12px;
+      
+      color: #FFFFFF;
+    }
+}
 
 </style>
