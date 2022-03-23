@@ -108,7 +108,7 @@ export default {
     width: 20%;
     height: 100%;
     border: 1px solid #ECECEE;   
-    border-bottom: none;
+    border-bottom: none2;
     background-image: url();
     background-size: 70%;
     background-repeat: no-repeat;

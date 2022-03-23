@@ -3,13 +3,19 @@
     <MyHeader />
     <MainUno />
     <MainDue />
+    <MainTre />
   </div>
 </template>
 
 <script>
 import MyHeader from './components/MyHeader.vue'
+
 import MainUno from './components/MainUno.vue'
+
 import MainDue from './components/MainDue.vue'
+
+import MainTre from './components/MainTre.vue'
+
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
 
@@ -18,7 +24,8 @@ export default {
   components: {
     MyHeader,
     MainUno,
-    MainDue
+    MainDue,
+    MainTre
   }
 }
 </script>
