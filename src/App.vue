@@ -6,6 +6,7 @@
     <MainTre />
     <MainQuattro />
     <PrimaDelFooter />
+    <MyFooter />
   </div>
 </template>
 
@@ -22,6 +23,8 @@ import MainQuattro from './components/MainQuattro.vue'
 
 import PrimaDelFooter from './components/PrimaDelFooter.vue'
 
+import MyFooter from './components/MyFooter.vue'
+
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
 
@@ -33,7 +36,8 @@ export default {
     MainDue,
     MainTre,
     MainQuattro,
-    PrimaDelFooter
+    PrimaDelFooter,
+    MyFooter
   }
 }
 </script>
