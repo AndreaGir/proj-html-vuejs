@@ -104,7 +104,7 @@ export default {
 }
 .bg-down{
     width: 100%;
-    height: 100px;
+    height: 9%;
     background-image: url('/src/assets/svg/svg-1.svg');
     background-size: cover;
 }

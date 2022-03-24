@@ -4,6 +4,7 @@
     <MainUno />
     <MainDue />
     <MainTre />
+    <MainQuattro />
   </div>
 </template>
 
@@ -16,6 +17,8 @@ import MainDue from './components/MainDue.vue'
 
 import MainTre from './components/MainTre.vue'
 
+import MainQuattro from './components/MainQuattro.vue'
+
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
 
@@ -25,7 +28,8 @@ export default {
     MyHeader,
     MainUno,
     MainDue,
-    MainTre
+    MainTre,
+    MainQuattro
   }
 }
 </script>
