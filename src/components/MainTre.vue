@@ -278,13 +278,17 @@ export default {
   border-radius: 20px;
   border-style: none;
   background-color: #E9D758;
-  
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
   left: 100px;
     span{
       font-size: 12px;
       
       color: #FFFFFF;
     }
+}
+.bottone:hover{
+    background-color: #E56768;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
 }
 
 </style>

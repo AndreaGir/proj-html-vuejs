@@ -1,10 +1,14 @@
 <template>
     <div class="main">
+        <div class="linee">
+
+            </div>
         <div class="main-centro">
             <div class="titoli">
                 <h1>Faculties available at EduPrime</h1>
                 <p>A single university with a load of courses, tailored to satisfy any student's needs.</p>
             </div>
+            
             <div class="sezioni">
                 <div class="img1mod">
                     <div class="immagine"></div>
@@ -54,9 +58,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.linee{
+    width: 100%;
+    height: 137px;
+    border: 1px solid #ECECEE;
+    position: absolute;
+    top: 137px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0px 0px 5px 3px rgba(0,0,0,0.22);
+}
 .main{
     width: 100%;
     height: 90vh;
+    position: relative;
 }
 .main-centro{
     width: 62%;
@@ -88,6 +101,7 @@ export default {
     height: 30%;
     position: relative;
     display: flex;    
+     
 }
 .img1{
     width: 20%;
@@ -108,7 +122,7 @@ export default {
     width: 20%;
     height: 100%;
     border: 1px solid #ECECEE;   
-    border-bottom: none2;
+    border-bottom: none;
     background-image: url();
     background-size: 70%;
     background-repeat: no-repeat;
@@ -116,8 +130,9 @@ export default {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #E56768;
-    z-index: 1;
+    background-color: rgba($color: #e21919, $alpha: 0.4);
+    
+    
         h4{
             color: #FFFFFF;
         }
@@ -125,10 +140,10 @@ export default {
 .immagine{
     width: 60%;
     height: 60%;
-    background-image: url('/src/assets/img/Gavel-v2.png');
+    
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: 999;
+    background-image: url('/src/assets/img/Gavel-v2.png');
 }
 .immagine2{
     width: 60%;
@@ -200,9 +215,17 @@ export default {
   height: 0;
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
-  border-top: 10px solid #E56768;
+  border-top: 10px solid #e21919;
+  opacity: 0.4;
   position: absolute;
   bottom: -9px;
   left: 78px;
+}
+.bottone{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+.bottone:hover{
+    background-color: #E56768;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
 }
 </style>

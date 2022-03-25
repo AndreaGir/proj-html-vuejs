@@ -12,7 +12,7 @@
                         <p><i id="icon" class="fa-solid fa-user"></i>Teacher: James Colins</p>
                         <p><i id="icon" class="fa-solid fa-money-bill"></i>Price: $21.00</p>
                         <div class="plus">
-                            <h5><i id="icon" class="fa-regular fa-eye"></i>View course</h5>
+                            <h5 class="bg-bt"><i id="icon" class="fa-regular fa-eye"></i>View course</h5>
                         </div>
                     </div>
                     <div class="make">
@@ -23,7 +23,7 @@
                         <p><i id="icon" class="fa-solid fa-user"></i>Teacher: James Colins</p>
                         <p><i id="icon" class="fa-solid fa-money-bill"></i>Price: Free</p>
                         <div class="plus">
-                            <h5><i id="icon" class="fa-regular fa-eye"></i>View course</h5>
+                            <h5 class="bg-bt"><i id="icon" class="fa-regular fa-eye"></i>View course</h5>
                         </div>
                     </div>
                     <div class="make">
@@ -34,7 +34,7 @@
                         <p><i id="icon" class="fa-solid fa-user"></i>Teacher: James Colins</p>
                         <p><i id="icon" class="fa-solid fa-money-bill"></i>Price: Free</p>
                         <div class="plus">
-                            <h5><i id="icon" class="fa-regular fa-eye"></i>View course</h5>
+                            <h5 class="bg-bt"><i id="icon" class="fa-regular fa-eye"></i>View course</h5>
                         </div>
                     </div>
                     <div class="make">
@@ -45,7 +45,7 @@
                         <p><i id="icon" class="fa-solid fa-user"></i>Teacher: James Colins</p>
                         <p><i id="icon" class="fa-solid fa-money-bill"></i>Price: Free</p>
                         <div class="plus">
-                            <h5><i id="icon" class="fa-regular fa-eye"></i>View course</h5>
+                            <h5 class="bg-bt"><i id="icon" class="fa-regular fa-eye"></i>View course</h5>
                         </div>
                     </div>
                 </div>
@@ -150,13 +150,16 @@ export default {
 .plus{
     position: absolute;
     bottom: -16px;
+    background-color: #eb0000e6;
+    padding: 8px;
+    border-radius: 15px;
         h5{
-            background-color: #eb0000e6;
-            padding: 8px;
-            border-radius: 15px;
+            
+            
             color: #ffffff;
         }
 }
+
 .image{
     width: 60px;
     height: 60px;
@@ -222,6 +225,7 @@ export default {
         border-radius: 20px;
         border-style: none;
         background-color: #E56768;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
                 span{
                     font-size: 12px;
       
@@ -283,12 +287,15 @@ export default {
         border-radius: 20px;
         border-style: none;
         background-color: #E56768;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
                 span{
                     font-size: 12px;
       
                     color: #FFFFFF;
     }
+    
 }
+
 }
 .bg-img{
     width: 40%;
@@ -306,4 +313,13 @@ export default {
     background-repeat: no-repeat; 
     margin-bottom: 10px;
 }
+.bottone:hover{
+        background-color: #e9d758;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    }
+.bottone1:hover{
+        background-color: #e9d758;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    }
+
 </style>

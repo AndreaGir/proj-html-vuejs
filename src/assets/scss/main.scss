@@ -1,1 +1,7 @@
-$bgyellow: #E9D758,
+@import "~@fontsource/assistant/index.css" ;
+@import "~@fontsource/assistant/500.css" ;
+@import "~@fontsource/assistant/700.css" ;
+
+html {
+    font-family: "assistant", sans-serif;
+}

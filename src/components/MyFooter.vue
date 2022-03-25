@@ -39,22 +39,16 @@
             <div class="link">
                 <div class="get">
                     <h4>Get EduPrime</h4>
-                    <p>Request a website</p>
-                    <p>Broswe Themes</p>
+                    <p v-for="(link,i) in array" :key="i">{{ link.name}}</p>
+                    <!-- <p>Broswe Themes</p>
                     <p>Payment option</p>
                     <p>Support Sistem</p>
                     <p>Checkout</p>
-                    <p>Purchase Theme</p>
+                    <p>Purchase Theme</p> -->
                 </div>
                 <div class="net">
                     <h4>Networking</h4>
-                    <p>Purchase Theme</p>
-                    <p>Our Benefits</p>
-                    <p>Our Team</p>
-                    <p>Our services</p>
-                    <p>Other products</p>
-                    <p>My account</p>
-
+                   <p v-for="(link,i) in array2" :key="i">{{ link.nome}}</p>
                 </div>
             </div>
 
@@ -62,7 +56,7 @@
                 <div class="inp">
                     <input type="text" placeholder="Search ...">
                     <div class="puls-gial">
-                    <i id="plane" class="fa-solid fa-paper-plane"></i>
+                    <i id="plane" class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 </div>
                 <div class="but">
@@ -96,6 +90,69 @@
 
 <script>
 export default {
+    data(){
+    return{
+      array: [
+      {
+        name: 'Request a website',
+        
+      },
+      {
+        name: 'Brows themes',
+        
+      },
+      {
+        name: 'Payment option',
+
+      },
+      {
+        name: 'Support sistem',
+        
+      },
+      {
+        name: 'Checkout',
+        
+      },
+      {
+        name: 'Purchase theme',
+
+      },
+      {
+        name: 'Purchase',
+
+      }
+    ],
+    array2: [
+      {
+        nome: 'Purchase theme',
+        
+      },
+      {
+        nome: 'Our benefits',
+        
+      },
+      {
+        nome: 'Our team',
+
+      },
+      {
+        nome: 'Our service',
+        
+      },
+      {
+        nome: 'Other product',
+        
+      },
+      {
+        nome: 'My account',
+
+      },
+      
+    ]
+    }
+    
+
+  }
     
 }
 </script>

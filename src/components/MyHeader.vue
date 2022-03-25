@@ -11,14 +11,15 @@
 
           </div>
           <!-- nav bar e button -->
-          <div class="nav-dentro"> 
-            <span class="span">Home<i class="fa-solid fa-caret-down"></i></span>
+          <div class="nav-dentro" > 
+            <!-- <span class="span">Home<i class="fa-solid fa-caret-down"></i></span>
             <span class="span">Courses<i class="fa-solid fa-caret-down"></i></span>
             <span >About Us</span>
             <span class="span">News<i class="fa-solid fa-caret-down"></i></span>
             <span class="span">Pages<i class="fa-solid fa-caret-down"></i></span>
             <span >Contact</span>
-            <span>Purchase</span>
+            <span>Purchase</span> -->
+            <span class="span" v-for="(links, i ) in array" :key="i">{{links.link}}<i :class="links.icon"></i></span>
             <button class="bottone"><span>VIEW COURSES</span> </button>
           </div>
         </div>
@@ -49,9 +50,9 @@
         </div>
 
         <div class="puls-laterale">
-          <i class="fa-solid fa-cart-arrow-down"></i>
-          <i class="fa-solid fa-book-open"></i>
-          <i class="fa-regular fa-circle"></i>
+          <i id="icn" class="fa-solid fa-cart-arrow-down"></i>
+          <i id="icn" class="fa-solid fa-book-open"></i>
+          <i id="icn" class="fa-regular fa-circle"></i>
         </div>
 
         
@@ -67,6 +68,45 @@
 <script>
 
 export default {
+
+  data(){
+    return{
+      array: [
+      {
+        link: 'Home',
+        icon: 'fa-solid fa-caret-down'
+      },
+      {
+        link: 'Courses',
+        icon: 'fa-solid fa-caret-down'
+      },
+      {
+        link: 'About us',
+        active: false
+      },
+      {
+        link: 'News',
+        icon: 'fa-solid fa-caret-down'
+      },
+      {
+        link: 'Pages',
+        icon: 'fa-solid fa-caret-down'
+      },
+      {
+        link: 'Contact',
+        active: false
+      },
+      {
+        link: 'Purchase',
+        active: false
+      }
+    ]
+    }
+    
+
+  }
+   
+    
   
   
 }
@@ -140,6 +180,7 @@ export default {
   border-radius: 20px;
   border-style: none;
   background-color: #E9D758;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
     span{
       font-size: 12px;
       
@@ -152,6 +193,7 @@ export default {
   border-radius: 20px;
   border-style: none;
   background-color: rgba(255, 255, 255 , 1.0 );
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
   
   right: 80px;
   
@@ -167,7 +209,7 @@ export default {
   border-radius: 20px;
   border-style: none;
   background-color: #E9D758;
-  
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
   left: 100px;
     span{
       font-size: 12px;
@@ -230,6 +272,10 @@ export default {
   bottom: 50%;
   border-radius: 3px;
   gap: 4px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#icn{
+  color: #FFFFFF;
 }
 .triangle-down {
   width: 0;

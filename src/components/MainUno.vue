@@ -65,6 +65,7 @@ export default {
             border-radius: 20px;
             border-style: none;
             background-color: #E9D758;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
                 span{
                     font-size: 12px;
       
@@ -80,6 +81,9 @@ export default {
     background-image: url('/src/assets/img/Books-icon.png');
     background-size: contain;
     background-repeat: no-repeat;
+}
+button:hover{
+    background-color: #e56768;
 }
 
 </style>
